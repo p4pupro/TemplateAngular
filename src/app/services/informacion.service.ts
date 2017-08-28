@@ -27,7 +27,7 @@ public carga_info(){
 public carga_sobre_nosotros () {
   this.http.get("https://paginaweb-ef32e.firebaseio.com/equipo.json")
   .subscribe( data => {
-    console.log(data.json());
+    //console.log(data.json());
     this.cargada = true;
    this.equipo = data.json();
  });
